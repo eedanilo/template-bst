@@ -4,11 +4,9 @@
 * Email (@ccc): 
 * Matrícula: 
 
-# Roteiro: Nome do Roteiro
+# Roteiro: BST
 
 ## O template
-
-> Não altere o arquivo pom.xml
 
 > Não altere o arquivo build.gradle
 
@@ -24,44 +22,9 @@
 
 > Executando os testes: `gradle test` na raiz do projeto.
 
-
-## Introdução
-
-Depois deste roteiro você será capaz de ...
-
-**O exemplo.** Vamos trabalhar com ... 
-
-Agora é com vocês!
-
 ## A tarefa. 
 
-### Implementação e testes
-
-Comece ...
-
-
-Ah...confira (sempre!) se você passa nos testes: `gradle test`.
-
-### Análise
-
-Perguntas importantes:
-  * Pergunta 1?
-
-  ```diff
-  - INSIRA SUA RESPOSTA AQUI
-  ```
- 
- * Pergunta 2?
-
- ```diff
- - INSIRA SUA RESPOSTA AQUI
- ```
-   
-## Mais estudo
-
-Implemente as seguintes questões (com recursividade) no tst-eda:
-* ...
-* ...
+Implementes os métodos marcados com TODO.
 
 ## Entregando o lab
 
