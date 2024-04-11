@@ -24,7 +24,7 @@
 
 ## A tarefa. 
 
-Implementes os métodos marcados com TODO.
+Implemente os métodos marcados com TODO. Implemente também os testes para esses métodos.
 
 ## Entregando o lab
 
