@@ -1,0 +1,78 @@
+# Identificação
+
+* Nome: 
+* Email (@ccc): 
+* Matrícula: 
+
+# Roteiro: Nome do Roteiro
+
+## O template
+
+> Não altere o arquivo pom.xml
+
+> Não altere o arquivo build.gradle
+
+> O código java estará (ou você terá que colocar) no diretório **/src/main/java/**
+
+> Os testes estarão (ou você terá que incluir) no diretório **/src/test/java/**
+
+> Seu código é tão bom quanto seus testes. Eu vou executar meus testes quando você submeter.
+
+> Não mude nenhuma assinatura de método, nome de classe ou localização dos arquivos. Mas você pode/deve criar outros métodos e classes, desde que passem nos testes.
+
+> Compilando: `gradle compileJava` na raiz do projeto.
+
+> Executando os testes: `gradle test` na raiz do projeto.
+
+
+## Introdução
+
+Depois deste roteiro você será capaz de ...
+
+**O exemplo.** Vamos trabalhar com ... 
+
+Agora é com vocês!
+
+## A tarefa. 
+
+### Implementação e testes
+
+Comece ...
+
+
+Ah...confira (sempre!) se você passa nos testes: `gradle test`.
+
+### Análise
+
+Perguntas importantes:
+  * Pergunta 1?
+
+  ```diff
+  - INSIRA SUA RESPOSTA AQUI
+  ```
+ 
+ * Pergunta 2?
+
+ ```diff
+ - INSIRA SUA RESPOSTA AQUI
+ ```
+   
+## Mais estudo
+
+Implemente as seguintes questões (com recursividade) no tst-eda:
+* ...
+* ...
+
+## Entregando o lab
+
+> Passo 0. Modifique o arquivo README. Coloque seu nome, email @ccc e matrícula nos lugares indicados. Se você não fizer isso, não considero que sua prova foi assinada e, portanto, não vou corrigir. Não mude a formatação da linha. Apenas inclua seus dados.
+
+> Passo 1. Certifique-se **NO TERMINAL** de que sua solução compila e passa nos testes. Isso deve ser feito com os comandos do gradle (compileJava e test).
+
+> Passo 2. Certifique-se de que você respondeu as perguntas teóricas onde foi indicado aqui no README.
+
+> Passo 3. Submeta as suas modificações para o repositório
+
+  * `git pull`
+  * `git commit -m "entregando o lab de algoritmos recursivos"`
+  * `git push origin main`
