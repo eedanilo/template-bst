@@ -1,8 +1,8 @@
 # Identificação
 
-* Nome: 
-* Email (@ccc): 
-* Matrícula: 
+* Nome: Ewerthon Tavares
+* Email (@ccc): ewerthon.tavares@ccc.ufcg.edu.br
+* Matrícula: 121210726
 
 # Roteiro: BST
 
