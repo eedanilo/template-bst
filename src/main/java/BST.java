@@ -56,7 +56,25 @@ public class BST {
      * o elemento não esteja presente na árvore.
      */
     public Node search(int element) {
-        return null;
+        if(this.isEmpty()) {
+            throw new RuntimeException("Árvore vazia");
+        }
+        return search(this.root, element);
+    }
+
+    private Node search(Node root, int element) {
+        if (root == null) {
+            return null;
+        }
+        if (root.value == element) {
+            return root;
+        }
+        if (element > root.value) {
+            return search(root.right, element);
+        }
+        else {
+            return search(root.left, element);
+        }
     }
     
     
@@ -64,19 +82,64 @@ public class BST {
      * Retorna a altura da árvore.
      */
     public int height() {
-        return -1;
+        if(isEmpty()) {
+            return -1;
+        }
+        return height(this.root);
+    }
+
+    private int height(Node root) {
+        if (root == null) {
+            return -1;
+        }
+        return 1 + Math.max(height(root.left), height(root.right));
     }
 
 
     public boolean equals(BST outra) {
-        return false;
+        if (outra == null) {
+            return false;
+        }
+        if (this.size != outra.size) {
+            return false;
+        }
+        return equals(this.root, outra.root);
+    }
+
+    private boolean equals(Node n1, Node n2) {
+        if (n1 == null && n2 == null) {
+            return true;
+        }
+        if (n1 == null || n2 == null) {
+            return false;
+        }
+        if (n1.value != n2.value) {
+            return false;
+        }
+        return equals(n1.left, n2.left) && equals(n1.right, n2.right);
     }
 
     /**
     * Retorna o número de folhas da árvore.
     */
     public int contaFolhas() {
-        return -1;
+        if (this.isEmpty()) {
+            return 0;
+        }
+        return contaFolhas(this.root);
+    }
+
+    private int contaFolhas(Node no) {
+        if (no.left == null && no.right == null) {
+            return 1;
+        }
+        if (no.left == null) {
+            return contaFolhas(no.right);
+        }
+        if (no.right == null) {
+            return contaFolhas(no.left);
+        }
+        return contaFolhas(no.left) + contaFolhas(no.right);
     }
 
     
