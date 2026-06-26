@@ -163,6 +163,19 @@ public class BST {
         return contaFolhas(no.left) + contaFolhas(no.right);
     }
 
+    public Node sucessor(int v) {
+        if (this.contains(v)){
+            return sucessor(search(v));
+        }
+    }
+
+    private Node sucessor(Node no) {
+        if (no.right == null) {
+            return null;
+        }
+        return 
+    }
+
     
 
     /**
