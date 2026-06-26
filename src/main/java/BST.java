@@ -55,6 +55,27 @@ public class BST {
      * @return O nó contendo o elemento procurado. O método retorna null caso
      * o elemento não esteja presente na árvore.
      */
+
+    public Node iterativeSearch(int element) {
+        if(this.isEmpty()) {
+            throw new RuntimeException("Árvore vazia");
+        }
+        Node aux = this.root;
+        while (aux != null) {
+            if (aux.value == element) {
+                return aux;
+            }
+            else if (element < aux.value) {
+                aux = aux.left;
+            }
+            else {
+                aux = aux.right;
+            }
+        }
+        return null;
+    }
+
+
     public Node search(int element) {
         if(this.isEmpty()) {
             throw new RuntimeException("Árvore vazia");
