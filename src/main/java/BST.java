@@ -167,13 +167,47 @@ public class BST {
         if (this.contains(v)){
             return sucessor(search(v));
         }
+        return sucessorNC(this.root, v);
+    }
+
+    private Node sucessorNC(Node no, int v) {
+        Node candidato = null;
+        Node atual = no;
+        while (atual != null) {
+            if (atual.value == v) {
+                return sucessor(atual);
+            }
+            else if (atual.value < v) {
+                atual = atual.right;
+            }
+            else {
+                candidato = atual;
+                atual = atual.left;
+            }
+        }
+        return candidato;
     }
 
     private Node sucessor(Node no) {
-        if (no.right == null) {
+        if (no.right == null && no.parent == null) {
             return null;
         }
-        return 
+        else if (no.right == null) {
+            Node atual = no;
+            while (atual.parent != null && atual.parent.right == atual) {
+                atual = atual.parent;
+            }
+            return atual.parent;
+        }
+        Node atual = no.right;
+        while (atual.left != null) {
+            atual = atual.left;
+        }
+        return  atual;
+    }
+
+    public boolean contains(int v) {
+        return search(v) != null;
     }
 
     
